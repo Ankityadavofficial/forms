@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #forms {
+            width: 100%;
+        }
+
+        .container {
+            width: 1000px;
+            margin: auto;
+            background-color: rgb(171, 230, 230);
+            border: 1px black solid;
+        }
+
+        .account {
+            width: 80%;
+            background-color: #fff;
+            margin: 100px auto;
+            padding: 10px;
+            box-shadow: 0px 0px 10px black;
+            overflow: hidden;
+        }
+
+        h1 {
+            padding: 20px 200px;
+            font-size: 50px;
+            background-color: rgb(214, 213, 213);
+            box-shadow: 0 2px 10px gray;
+        }
+
+        .main-forms {
+            width: 100%;
+            margin-top: 10px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .name {
+            font-size: 25px;
+            margin: 20px;
+            padding: 3px;
+        }
+
+        label {
+
+            color: orange;
+        }
+
+        #Name {
+            margin: 10px 0px;
+            font-size: 20px;
+            padding: 5px;
+            border: 0px gray solid;
+            outline-color: gray;
+            width: 300px;
+            box-shadow: 0 0 2px gray;
+            border-radius: 5px;
+        }
+
+        .select {
+            font-size: 20px;
+            margin-left: 2px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #income {
+            width: 250px;
+        }
+
+        .income {
+            background-color: orange;
+            margin-left: 10px;
+            color: #fff;
+
+        }
+
+        #bio {
+            margin: 10px 0px;
+            font-size: 20px;
+            height: 100px;
+            padding: 5px;
+            border: 0px gray solid;
+            outline-color: gray;
+            width: 650px;
+            box-shadow: 0 0 2px gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="forms">
+        <div class="container">
+            <form action="">
+                <div class="account">
+                    <h1>Create Account</h1>
+                    <div class="main-forms">
+                        <div class="name"><label for="">First Name* </label><br>
+                            <input type="text" name="Name" id="Name" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="name"><label for="">Last Name*</label> <br>
+                            <input type="text" name="Name" id="Name" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="name"><label for="">Email*</label> <br>
+                            <input type="email" style="width: 640px;" name="Name" id="Name"
+                                placeholder="Enter your email id" required>
+                        </div>
+                        <div class="name"><label for="">Password*</label> <br>
+                            <input type="password" name="password" id="Name" placeholder="Enter your password" required>
+                        </div>
+                        <div class="name"><label for="">Confirm Password*</label> <br>
+                            <input type="text" name="Name" id="Name" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="name" style="width: 300px;"><label for="">Gender:</label> <br>
+                            <input type="radio" name="gender" id="m"><label class="select" for="m">Male</label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="gender" id="f"><label class="select" for="f">Female</label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="gender" id="o"><label class="select" for="o">Other</label>
+                        </div>
+                        <div class="name"><label for="">Hobbies:</label> <br>
+                            <input type="checkbox" name="gender" id="m">
+                            <labe class="select" for="m">Music</label>&nbsp;
+                                <input type="checkbox" name="gender" id="f"><label class="select"
+                                    for="f">sports</label>&nbsp;
+                                <input type="checkbox" name="gender" id="o"><label class="select"
+                                    for="o">Travel</label>&nbsp;
+                                <input type="checkbox" name="gender" id="o"><label class="select" for="o">Other</label>
+                        </div>
+                        <div class="name"><label for="">Source of Income</label> <br>
+                            <select name="" id="Name">
+                                <option value="">Employed</option>
+                                <option value="">Self-Employed</option>
+                                <option value="">Unemployed</option>
+                            </select>
+                        </div>
+                        <div class="name"><label for="">Income</label> <br>
+                            <input type="range" id="income"><label for="" class="income">20k</label>
+                        </div>
+                        <div class="name"><label for="">Upload Profile Photo</label> <br>
+                            <input type="file" name="" id="Name" >
+                        </div>
+                        <div class="name"><label for="">Age</label> <br>
+                            <input type="number" name="" id="Name" min="18" max="100" maxlength="2" required>
+                        </div>
+                        <div class="name"><label for="">Bio</label> <br>
+                            <textarea name="" id="bio"></textarea>
+                        </div>
+                    </div>
+                        <button id="Name"
+                            style="background-color: orange; cursor: pointer; font-size: 25px; padding: 10px 0; margin-right: 80px; font-weight:bold; float: right;">
+                            Create
+                        </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
